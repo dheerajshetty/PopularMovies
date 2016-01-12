@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/action_bar_height"
+    tools:context="com.example.dheerajshetty.popularmovies.MovieDetailFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/movie_title_textview"
+        android:layout_gravity="left|top"
+        android:textColor="#ffffff"
+        android:background="#1e7b5b"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/title_padding"
+        android:paddingBottom="@dimen/title_padding"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_text_size" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_detail_imageview"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/movie_title_textview"
+        android:paddingLeft="@dimen/detail_view_image_left_padding"
+        android:paddingTop="@dimen/detail_view_image_top_padding"
+        android:minHeight="180dp"
+        android:minWidth="150dp"
+        android:nestedScrollingEnabled="false"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/release_date_header"
+        android:id="@+id/release_date_textview"
+        android:layout_below="@id/movie_title_textview"
+        android:layout_alignRight="@id/movie_detail_imageview"
+        android:paddingRight="@dimen/release_date_right_padding"
+        android:paddingTop="@dimen/release_date_top_padding"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/user_rating_textview"
+        android:layout_below="@+id/release_date_textview"
+        android:layout_alignLeft="@+id/release_date_textview"
+        android:layout_alignStart="@+id/release_date_textview"
+        android:paddingTop="@dimen/user_rating_top_padding"
+        android:textSize="@dimen/user_rating_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/movie_plot_textview"
+        android:layout_below="@+id/movie_detail_imageview"
+        android:layout_marginTop="@dimen/movie_plot_top_margin"
+        android:layout_marginLeft="@dimen/movie_plot_left_margin"
+        android:layout_marginStart="@dimen/movie_plot_left_margin"/>
+
+</RelativeLayout>
+</ScrollView>
