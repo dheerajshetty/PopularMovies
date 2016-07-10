@@ -13,7 +13,7 @@
 
         <fragment
             android:id="@+id/fragment_movie_list"
-            android:name="com.example.dheerajshetty.popularmovies.MovieListFragment"
+            android:name="com.example.dheerajshetty.popularmovies.ui.MovieListFragment"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
