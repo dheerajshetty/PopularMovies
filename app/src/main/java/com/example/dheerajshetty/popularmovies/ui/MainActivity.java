@@ -1,10 +1,12 @@
-package com.example.dheerajshetty.popularmovies;
+package com.example.dheerajshetty.popularmovies.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.dheerajshetty.popularmovies.R;
 
 /**
  * This is the main activity for the popular movies app.

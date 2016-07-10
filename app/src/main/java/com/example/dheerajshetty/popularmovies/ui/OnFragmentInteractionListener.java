@@ -1,4 +1,4 @@
-package com.example.dheerajshetty.popularmovies;
+package com.example.dheerajshetty.popularmovies.ui;
 
 import android.os.Bundle;
 
